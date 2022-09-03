@@ -58,7 +58,10 @@ def calculate_frequencies(file_contents):
     return cloud.to_array()
 
     # ``````````````````````````````````````````````````````````````````````````````
-    # THIS WAS THE FIRST ITERATION OF THIS PROBLEM
+    # This was my first iteration of the problem. It didnt work thats why I took a 
+    # different approach and seperated the if statment to a nested if statement
+    # 
+    # ``````````````````````````````````````````````````````````````````````````````
     # words = file_contents.split()
     # word_dict = {}
     # for word in words:
@@ -67,16 +70,9 @@ def calculate_frequencies(file_contents):
     #     else:
     #         word_dict[word] += 1
 
+    
     # ``````````````````````````````````````````````````````````````````````````````
-    # THIS WAS THE SECOND ITERATION OF THIS PROBLEM
-    # word_dict = {}
-    # for word in words:
-    #     if word not in word_dict:
-    #         word_dict[word] = 1
-    #     else:
-    #         word_dict[word] += 1
-
-    # ``````````````````````````````````````````````````````````````````````````````
+   
 
 
 myimage = calculate_frequencies(file_contents)
