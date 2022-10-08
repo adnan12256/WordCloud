@@ -56,24 +56,7 @@ def calculate_frequencies(file_contents):
     cloud = wordcloud.WordCloud()
     cloud.generate_from_frequencies(word_dict)
     return cloud.to_array()
-
-    # ``````````````````````````````````````````````````````````````````````````````
-    # This was my first iteration of the problem. It didnt work thats why I took a 
-    # different approach and seperated the if statment to a nested if statement
-    # 
-    # ``````````````````````````````````````````````````````````````````````````````
-    # words = file_contents.split()
-    # word_dict = {}
-    # for word in words:
-    #     if word not in word_dict and word not in punctuations and word not in uninteresting_words:
-    #         word_dict[word] = 0
-    #     else:
-    #         word_dict[word] += 1
-
-    
-    # ``````````````````````````````````````````````````````````````````````````````
    
-
 
 myimage = calculate_frequencies(file_contents)
 plt.imshow(myimage, interpolation='nearest')
